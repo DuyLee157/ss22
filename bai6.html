@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sobatky = +prompt("hãy nhập một số có 4 chữ số")
+
+        var hangnghin = (sobatky - (sobatky % 1000))
+        var hangtram  = (sobatky - (sobatky % 100))
+        var hangchuc  = (sobatky - (sobatky % 10))
+        var hangdonvi = sobatky % 10
+
+        if(sobatky >= 1000 && sobatky <= 9999){
+            console.log("chữ số hàng nghìn là",+hangnghin);
+            console.log("chữ số hàng trăm là",+hangtram)
+            console.log("chữ số hàng chục là",+hangchuc)
+            console.log("chữ số hàng đơn vị là",+hangdonvi)
+        }else{
+            console.log("số nhập vào không hợp lệ")
+        }
+    </script>
+</body>
+</html>
